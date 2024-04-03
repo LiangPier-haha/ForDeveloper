@@ -10,8 +10,8 @@ from app.models.model_base import Base
 from app.db.base import engine
 from app.core.config import settings
 from app.helpers.exception_handler import CustomException, http_exception_handler
-from app.run_start.default_create import DefaultUser;
-logging.config.fileConfig(settings.LOGGING_CONFIG_FILE, disable_existing_loggers=False)
+from app.run_start.default_create import DefaultUser
+# logging.config.fileConfig(settings.LOGGING_CONFIG_FILE, disable_existing_loggers=False)
 Base.metadata.create_all(bind=engine)
 
 
